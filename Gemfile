@@ -18,7 +18,7 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
-#ename CORS (cross-origin HTTP request)
+# Rename CORS (cross-origin HTTP request)
 gem 'rack-cors'
 
 #postgreSQL
