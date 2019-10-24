@@ -21,8 +21,14 @@ gem 'bootsnap', '>= 1.1.0', require: false
 # Rename CORS (cross-origin HTTP request)
 gem 'rack-cors'
 
-#postgreSQL
+# postgreSQL
 gem 'pg'
+
+# generates fake data: names, addresses, phone numbers, etc.
+gem 'faker'
+
+# allows you to generate serializers from the command line
+gem 'active_model_serializers'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

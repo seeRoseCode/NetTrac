@@ -13,6 +13,10 @@
 - User can keep track of how many times they contact someone and how they contact them
 - User can set reminders to contact
 
+# Ruby gems
+- faker
+- pg
+- rack-cors
 
 
 
