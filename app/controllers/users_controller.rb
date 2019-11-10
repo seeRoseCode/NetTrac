@@ -13,12 +13,20 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     @user.add_network
-    @user.save ? render json: { user: UserSerializer.new(@user)} , status: :created  : render json: {errors: @user.errors.full_messages}, status: :unprocessable_entity
+    if @user.save
+      render json: UserSerializer.new(@user), status: :created
+    else
+      render json: @user.errors.full_messages, status: :unprocessable_entity
+    end
   end
 
   def update
     this_user
-    @user.update(user_params) ? render json: @user : render json: @user.errors.full_messages, status: :unprocessable_entity
+    if @user.update(user_params)
+      render json: @user
+    else
+      render json: @user.errors.full_messages, status: :unprocessable_entity
+    end
   end
 
   def destroy
