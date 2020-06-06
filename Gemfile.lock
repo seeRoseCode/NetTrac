@@ -95,6 +95,7 @@ GEM
     nio4r (2.5.2)
     nokogiri (1.10.4)
       mini_portile2 (~> 2.4.0)
+    pg (1.2.3)
     public_suffix (4.0.1)
     puma (3.12.1)
     rack (2.0.7)
@@ -158,7 +159,7 @@ GEM
       railties (>= 5.0)
     websocket-driver (0.7.1)
       websocket-extensions (>= 0.1.0)
-    websocket-extensions (0.1.4)
+    websocket-extensions (0.1.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)
 
@@ -172,6 +173,7 @@ DEPENDENCIES
   chromedriver-helper
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
+  pg
   puma (~> 3.11)
   rack-cors
   rails (~> 5.2.3)
